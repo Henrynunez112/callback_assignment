@@ -43,7 +43,7 @@ let repeatCall = (num, setInterval(() => {
 }, 100))
 
 //Problem 4
-//Write a function that take in a number and two callbacks.  It should apply the first callback to the number, then the second callback, then return the result
+//Write a function that takes in a number and two callbacks.  It should apply the first callback to the number, then the second callback, then return the result
 
 const math = (num, callback, callback2) => {
     let result = callback2(callback(num))
@@ -55,3 +55,5 @@ const callMulti = num => num * 2
 
 console.log(math(4,callAdd,callMulti))
 
+// const math2 = num => (num, num2 => {num + 4}, num3 => {num * 2})
+// console.log(math(2))
